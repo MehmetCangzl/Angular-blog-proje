@@ -1,0 +1,37 @@
+<div class="navbar">
+    <div class="top">
+        <mat-icon [inline]='true'>notifications_none</mat-icon>
+    </div>
+    <div class="user">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/009/636/683/small/admin-3d-illustration-icon-png.png" alt="">
+        <h4 class="name">Mehmet Can</h4>
+        <p class="mail">admin@gmail.com</p>
+    </div>
+    <div class="menu">
+        <div class="menu-head">
+            <span>dashboard</span>
+        </div>
+        <div class="menu-item">
+            <button mat-button class="menu-button" [routerLink]="['/dashboard']">
+                <mat-icon>dashboard</mat-icon>
+                <span>Anasayfa</span>
+            </button>
+            <button mat-button class="menu-button" [routerLink]="['/posts']">
+                <mat-icon>message</mat-icon>
+                <span>Mesajlar</span>
+            </button>
+            <button mat-button class="menu-button">
+                <mat-icon>comment</mat-icon>
+                <span>Yorumlar</span>
+            </button>
+            <button mat-button class="menu-button">
+                <mat-icon>pages</mat-icon>
+                <span>Sayfalar</span>
+            </button>
+            <button mat-button class="menu-button">
+                <mat-icon>settings</mat-icon>
+                <span>Ayarlar</span>
+            </button>
+        </div>
+    </div>
+</div>
