@@ -13,7 +13,6 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import { PostComponent } from './admin/dashboard/posts/posts.component';
-import { ModalpopupComponent } from './modalpopup/modalpopup.component';
 
 
 const Ux_Modules = [
@@ -23,7 +22,7 @@ const Ux_Modules = [
   MatToolbarModule,
   MatCardModule,
   MatInputModule,
- 
+
 ]
 
 @NgModule({
@@ -32,8 +31,7 @@ const Ux_Modules = [
     DefaultComponent,
     SidebarComponent,
     DashboardComponent,
-    PostComponent,
-    ModalpopupComponent
+    PostComponent
   ],
   imports: [
     BrowserModule,
