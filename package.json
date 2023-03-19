@@ -21,6 +21,10 @@
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
     "alertifyjs": "^1.13.1",
+    "devextreme": "^21.2.3",
+    "devextreme-angular": "^21.2.3",
+    "devextreme-aspnet-data-nojquery": "^2.9.1",
+    "ngx-toastr": "^14.3.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

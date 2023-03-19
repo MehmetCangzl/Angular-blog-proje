@@ -3,6 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  apiUrl: "http://tport.api.meetingpointturkey.com/v1",
   production: false
 };
 

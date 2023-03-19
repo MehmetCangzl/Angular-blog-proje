@@ -12,7 +12,12 @@ import { SidebarComponent } from './admin/shard/sidebar/sidebar.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
-import { PostComponent } from './admin/dashboard/posts/posts.component';
+import { EmployeesComponent } from './employees/employees.component';
+import { DxDataGridModule } from 'devextreme-angular';
+import { ToastrModule } from 'ngx-toastr';
+import { HttpClientModule } from '@angular/common/http';
+import { CoreService } from './Service/core.service';
+import { CustomDataSourceService } from './Service/custom-data-source.service';
 
 
 const Ux_Modules = [
@@ -22,7 +27,6 @@ const Ux_Modules = [
   MatToolbarModule,
   MatCardModule,
   MatInputModule,
-
 ]
 
 @NgModule({
@@ -31,15 +35,21 @@ const Ux_Modules = [
     DefaultComponent,
     SidebarComponent,
     DashboardComponent,
-    PostComponent
+    EmployeesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     Ux_Modules,
+    ToastrModule.forRoot(),
+    DxDataGridModule
   ],
-  providers: [],
+  providers: [
+    CoreService,
+    CustomDataSourceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
